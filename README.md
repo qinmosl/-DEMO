@@ -12,15 +12,15 @@
   
   >网站概览
   
-  ![前台界面](C:\Users\墨生\AppData\Roaming\Typora\typora-user-images\image-20211106152529458.png)
+  ![前台界面](https://react-1305405728.cos.ap-nanjing.myqcloud.com/image-20211106152529458.png)
   
   
   
   > 登录  注册
   
-  ![登录](C:\Users\墨生\AppData\Roaming\Typora\typora-user-images\image-20211106152630769.png)
+  ![登录](https://react-1305405728.cos.ap-nanjing.myqcloud.com/image-20211106152630769.png)
 
-![注册](C:\Users\墨生\AppData\Roaming\Typora\typora-user-images\image-20211106152646470.png)
+![注册](https://react-1305405728.cos.ap-nanjing.myqcloud.com/image-20211106152646470.png)
 
 
 
@@ -28,7 +28,7 @@
 
 
 
-![后台界面](C:\Users\墨生\AppData\Roaming\Typora\typora-user-images\image-20211106152753748.png)
+![后台界面](https://react-1305405728.cos.ap-nanjing.myqcloud.com/image-20211106152753748.png)
 
 
 
