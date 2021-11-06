@@ -1,0 +1,17 @@
+
+$default-color: #272625;
+$default-size: 14px;
+$select-color: #4fc5f3;
+$select-size:15px;
+
+
+
+.list-group-item{
+    font-size: $default-size;
+    color: $default-color;
+}
+
+.select{
+    font-size: $select-size;
+    color: $select-color;
+}

@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect,lazy ,Suspense} from 'react'
+import { Route,  } from 'react-router-dom'
 
-function App() {
+import Loding from './components/Loding'
+import Browser from './components/Browser'
+const Admin = lazy(() => import("./components/Admin"))
+
+export default function App() {
+  useEffect(() => {
+    document.onselectstart = () => false   //禁止选择网页中的文字
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Suspense fallback={<Loding />}>
+      {/* 注册路由 */}
+     
+      <Route path="/br" component={Browser} />
+      <Route path="/login" component={Admin} />
+      <Route path="/home" component={Admin} />
+      <Route exact path="/" component={Browser} />
+     
+    </Suspense>
+  )
 }
-
-export default App;

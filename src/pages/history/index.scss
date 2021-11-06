@@ -1,0 +1,33 @@
+.wallpaper-left{
+    position: absolute;
+    top: 80px;
+    left: 26px;
+    width: 587px;
+    height: 179px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:repeat(3, 58px);
+    grid-gap: 3px;
+
+    div{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(65, 62, 62);
+    }
+
+}
+
+
+.no_history{
+    position: absolute;
+    top: 80px;
+    left: 26px;
+    width: 587px;
+    height: 179px;
+    background-color: transparent;
+    font-size: 36px;
+    text-align: center;
+    line-height: 100%;
+}

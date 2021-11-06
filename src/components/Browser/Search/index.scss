@@ -1,0 +1,159 @@
+
+.search-over{
+    //居中
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    .search{
+        width: 600px;
+        min-width: 600px;
+        height: 50px;
+        min-width: 50px;
+        background-color: white;
+        border-radius: 12px;
+        border: rgba(0, 0, 0, 0.4) solid 2px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    
+        .left{
+            position: relative;
+            width: 18%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;     //竖着
+            justify-content:center;     //主轴
+            //align-items: center;
+            padding: 0 20px;
+
+            .search-on{
+                display: block;
+                height: 30px;
+                width: 80px;
+                // background-color: greenyellow;
+                line-height: 30px;
+                .search-icon{
+                    float: left;
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+           &::after{
+                    content: "";
+                    position: absolute;     //要记得给父元素定位啊
+                    top: 0;
+                    right: 0px;
+                    width: 1px;
+                    height: 32px;       //总高度50
+                    background: #707070;
+                    opacity: 0.4;
+                    margin-top: 9px;
+           }
+        }
+    
+        .center{
+            width: 64%;
+            height: 100%;
+            padding: 10px 5px;
+    
+            input {
+                border:none;
+                height:30px;
+                width:100%;
+                &:focus{        //伪类 点击不显示边框 
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+    
+        .right{
+            width: 18%;
+            height: 100%;
+            position: relative;
+            img{
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height: 40px;
+                width: 40px;
+                
+            }
+            
+            &::after{
+                content: "";
+                position: absolute;     //要记得给父元素定位啊
+                top: 0;
+                left: 0px;
+                width: 1px;
+                height: 32px;       //总高度50
+                background: #707070;
+                opacity: 0.4;
+                margin-top: 9px;
+            }
+        }
+    
+    }
+}
+
+.left:hover .search-list{
+    display: block;
+}
+
+.search-list{
+    position: absolute;
+    top:50px;
+    bottom: 0;
+    height: 120px;
+    width: 18%;
+    background-color: white;
+    list-style:none;
+    border-radius: 4px;
+    li{
+        height: 33.3%;
+        position: relative;
+        padding: 4px 8px;
+        text-align: center;
+        border-bottom:  #707070 solid 1px;
+        &:hover{
+            background-color: rgba(154, 247, 250, 0.2);
+        }
+
+        .search-icon{
+            float: left;
+            width: 30px;
+            height: 100%;
+            margin-right: 10px;
+        }
+
+        &:nth-child(1) .search-icon{
+            background-image: url("https://react-1305405728.cos.ap-nanjing.myqcloud.com/browser/icon/baidu.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &:nth-child(2) .search-icon{
+            background-image: url("https://smartdl.lenovo.com.cn/assets/smart.newtab/image/ee4ab6de1c1.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &:nth-child(3) .search-icon{
+            background-image: url("https://react-1305405728.cos.ap-nanjing.myqcloud.com/browser/icon/bing.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+
+
+
+
+
+

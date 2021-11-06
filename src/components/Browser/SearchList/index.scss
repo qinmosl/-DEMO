@@ -1,0 +1,33 @@
+
+
+.listother{
+    display: flex;
+   // align-content: center;  //被上面的顶住了好像。就没有间隙了
+    justify-content: center;
+}
+.datalist{
+    width: 385px;
+    font-size: 15px;
+    background-color: white;
+    list-style: none;
+    border-radius: 2px;
+    li{
+        color: rgba(166, 247, 247,0.2);
+        margin-top:3px; 
+        &:hover{
+            background-color: rgba(166, 247, 247,0.2);
+        }
+
+        a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            text-decoration:none;
+            color: rgba(0, 0, 0,0.8);
+        }
+        // a:hover{text-decoration:none; cursor:pointer}/*a标签鼠标经过mouseover时的样式*/
+        // a:link{text-decoration:none; cursor:pointer;} /*a标签未访问时的样式*/
+        // a:visited{text-decoration: overline ; cursor:pointer}/*a标签访问过之后样式*/
+        // a:active{text-decoration:overline;cursor:pointer}/*a标签鼠标按下mousedown时的样式*/
+    }
+}

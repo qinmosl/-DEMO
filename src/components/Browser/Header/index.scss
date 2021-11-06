@@ -1,0 +1,133 @@
+$top_height :60px;	//整个导航栏高
+$top_bg_color : rgba(0,0,0,0.3); //导航栏颜色
+$top_login_height :  40px;	//登录a标签高
+$img_wrapper_color : #4e71f2; //头像边框颜色
+$wrapper_hover_color :darken(rgb(245, 201, 180),10%);		//头像边框悬停颜色  darken变暗
+$top_menu_border: 50px; 	//菜单边长
+$top_menu_padding:10px;		//扩大菜单选择范围
+
+@keyframes blink{
+	0%{opacity: 1;}
+	50%{opacity: 0.5;}
+	100%{opacity: 0.8;}
+}
+
+.top{
+    width: 100%;
+	min-width: 1000px;
+	z-index: 99;	
+	height: $top_height;
+	font-size: 14px;
+	position: absolute;
+	//background: -webkit-linear-gradient(left, white, skyblue);	
+	background:$top_bg_color;
+    // opacity: 0.3;
+
+	.top_left{
+		height: 100%;
+		width: 350px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 100;
+		padding-left: 24px;
+		display: flex;
+		align-items: center;
+
+		.iframe{
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	.top_right {
+		
+		height: 100%;
+		width: 240px;
+		position: absolute;
+		right: 0px;
+		top: 0;
+		z-index: 100;
+		padding-right: 24px;
+		display: flex;
+		justify-content:space-between;	//主轴
+		align-items :center;			//纵轴
+
+		.top_login{
+			height: $top_login_height;
+			width: 150px;
+			text-decoration:none;	//去掉a的默认样式
+			overflow: hidden;
+			display: flex;
+			justify-content: space-around;	//主轴
+			align-items :center;			//纵轴
+			
+			&:hover .top_img_wrapper{	//停留在.top_login上，则给他一个呼吸过渡
+				// width: 32px;
+				// height: 32px;
+				border: 1.5px solid $wrapper_hover_color;	
+			}
+
+			.top_img_wrapper{
+				width: 30px;
+				height: 30px;
+				border: 1px solid $img_wrapper_color;
+				// display: inline-block;
+				//不然头像会跟着抖
+				display: flex;
+				justify-content: center;	
+				align-items :center;
+				border-radius: 50%;
+				transition: all 1s ease;		//哪个元素改变，默认all | 过渡持续时间 | 过渡速率【ease】 | 过渡延迟时间
+				margin-right: 5px;
+				img{
+					padding: 2px;
+					width: 28px;
+					height: 28px;
+					border-radius: 50%;
+				}	
+			}
+
+			.no_login{
+				display: block;
+				background-color: aqua;
+				border-radius: 3px;
+				padding: 0 10px;
+				color: azure;
+			}
+			.on_login{
+				color: orange;
+				font-size: 14px;
+				animation: blink 2s linear infinite;
+				overflow: hidden; 
+				text-overflow:ellipsis;
+				white-space: nowrap;	//保证文本内容不会自动换行，如果多余的内容会在水平方向撑破单元格
+			}
+			
+		}
+		.top_menu{
+			height: $top_menu_border;
+			width: $top_menu_border;
+			padding: $top_menu_padding;
+			img{
+				padding: 2px;
+				width: 28px;
+				height: 28px;
+			}		
+		}
+	}
+
+	//当把菜单栏移动到看不见了
+	.top_in2 {
+		position: fixed;	
+		top: 0;
+		width: 100%;
+		z-index: 998;	
+		font-size: 14px;
+		background: -webkit-linear-gradient(left, white, skyblue);
+		overflow: hidden;
+		opacity: 0.8;
+	}
+	
+}
+

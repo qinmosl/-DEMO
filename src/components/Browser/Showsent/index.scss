@@ -1,0 +1,47 @@
+
+#showsent{
+
+    position: absolute;
+    // top: 30%;
+    // left: 50%;
+    // transform: translate(-50%,-50%); 
+    top: 100px;
+    left: 50px;
+
+    width: 280px;
+    height: 180px;
+    background-color: rgba(255,255,255,.2);
+    border: 3px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+
+    /* backdrop-filter 是使透过该层的底部元素模糊化 配合rgba透明度使用 */
+    backdrop-filter: blur(4px);  
+    /* 越小越不模糊 */
+
+    .sentspan{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(8, 5, 15);
+    }
+
+    #typed{
+        display: block;
+        white-space: pre-wrap;  
+      
+        // normal	默认。空白会被浏览器忽略。
+        // pre	空白会被浏览器保留。其行为方式类似 HTML 中的 <pre> 标签。
+        // nowrap	文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。
+        // pre-wrap	保留空白符序列，但是正常地进行换行。
+        // pre-line	合并空白符序列，但是保留换行符。
+        // inherit	规定应该从父元素继承 white-space 属性的值。
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

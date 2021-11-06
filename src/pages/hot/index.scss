@@ -1,0 +1,26 @@
+.wallpaper-left{
+    position: absolute;
+    top: 80px;
+    left: 26px;
+    width: 587px;
+    height: 179px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:repeat(3, 58px);
+    grid-gap: 2px;
+    grid-template-areas:"aa aa . . . ."
+                        "aa aa . bb bb ."
+                        ". . . bb bb .";
+    div{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .aa{
+        grid-area: aa;
+    }
+    .bb{
+        grid-area: bb;
+    }
+}

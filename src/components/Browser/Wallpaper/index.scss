@@ -1,0 +1,120 @@
+
+.overshade{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.wallPaper{
+    position: fixed;
+    width: 944px;
+    height: 290px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    z-index: 9999;
+    box-shadow: rgba(0,0,0,0.1) 0px 2px 10px 0px;
+    border-radius: 16px;
+    padding: 16px 24px 0 24px;
+    overflow: hidden;
+
+    .left_top{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 30px;
+        margin-bottom: 14px;
+        padding: 12px 24px 0 30px;
+        ul{
+            list-style:none;
+            color: rgba(0,0,0,0.8);
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            li{
+                position: relative;
+                cursor: pointer;
+                margin: 0 12px;
+                float: left;
+                background: 0 0;
+                &:nth-child(9){
+                    margin: 0;
+                }    
+                &:hover{
+                    border-bottom: skyblue solid 2px;
+                }
+                .shu{
+                    margin-top: 9px;
+                    height: 15px;
+                    width: 2px;
+                    overflow: hidden;
+                    background: #d7d9e0;
+                    zoom: 1;
+                }            
+            }
+        }
+
+        .setting{
+            float: right;
+            width: 264px;
+            height: 30px;
+            text-align: left;
+            position: relative;
+            
+            .nonuse-wp{
+                cursor: pointer;    //鼠标是手
+                line-height: 30px;
+                width: 100px;
+                margin-left: 3px;
+                &:hover{
+                    color: skyblue;
+                }
+                span:nth-child(1){
+                    margin-right: 3px;
+                }
+            }
+            .close-wp{
+                font-size: 24px;
+                position: absolute;
+                top: 5px;
+                right: 0;
+                cursor: pointer;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                color: #d7d9e0;
+                &:hover{
+                    color: skyblue;
+                }
+            }
+        }
+    }
+
+
+    .right{
+        position: absolute;
+        top: 80px;
+        right: 24px;
+        width: 264px;
+        height: 180px;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255,0.5);
+        background-color: rgba(255, 255, 255,0.5);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &::before{
+            content: "背景皮肤预览效果";
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+
+}

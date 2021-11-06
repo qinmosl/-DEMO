@@ -1,0 +1,28 @@
+.calendar{
+    position: absolute;
+    width: 1100px;
+    height: 600px;
+}
+
+.site-calendar-demo-card {
+    width: 500px;
+    min-width: 500px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+
+.submitbtn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+.popUp{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, 0);
+}

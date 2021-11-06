@@ -1,0 +1,86 @@
+$left-bg-color:#F5CBFF ;        //文字部分背景颜色
+$left-text-color:rgba(0, 0, 0, 0.5);      //文字部分文字颜色
+$left-mode-color: linear-gradient(135deg, #81FFEF 10%, #F067B4 100%);        //考研/高考   那两中间的字
+$right-item-color:rgba(0,0,0,.6);               //数字部分背景颜色
+$right-text-color:rgba(255,255,255,.8);         //数字部分文字颜色
+
+.countdown{
+    width: 280px;
+    height: 100px;
+    position: fixed;
+    right :40px;
+    bottom: 10px;
+    display: flex;
+    justify-content:space-between;	//主轴
+	align-items :center;			//纵轴
+
+    .cd-item{
+        background-color: $right-item-color;
+        height: 100%;
+        width: 22%;    
+        border-radius: 5px;  
+        backdrop-filter: blur(5px); 
+        overflow: hidden;
+        
+        ul{
+            width: 100%;
+            position: absolute;
+	        top: 0;
+            li{
+                height: 100px;
+                width: 100%;
+                font-size: 58px;
+                text-align: center;
+                line-height: 100px; 
+                color: $right-text-color;       
+            }
+        }
+
+        // ul:nth-child(1){  //odd 和 even 是可用于匹配下标是奇数或偶数的子元素的关键词（第一个子元素的下标是 1） 
+        // 上面代表着第1个ul 但是我div类名全一样，那就是这3个类名下的第一个ul，那还是3个
+        .hundreds{
+            animation: hd 1.8s ease-in 0s 1;    //名字  完成动画时间 速度曲线 开始延迟 播放次数（infinite无限播放） 反向播放
+        }
+
+        .tens{
+            animation: hd 2.1s ease-in 0s 1;
+        }
+
+        .units{
+            animation: hd 2.4s ease-in 0s 1;
+        }
+        
+        @keyframes hd {
+            from{
+                top:0px;
+            }to{
+
+            }
+        }
+         
+        
+    }
+
+    .cd-item-text{              //两个类名不留空格   这是那个左边文字块
+        font-size: 18px;
+        height: 100%;
+        width: 32%;
+        border-radius: 5px;
+        background-color: $left-bg-color;
+        color: $left-text-color;
+        backdrop-filter: blur(5px); 
+        display: flex;
+        flex-direction: column;
+        justify-content:center;	//主轴
+	    align-items :center;    //纵轴
+
+        span{
+            font-size:30px;
+            //实现文字渐变色
+            background-image:$left-mode-color;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+    
+}

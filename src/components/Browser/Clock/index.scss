@@ -1,0 +1,13 @@
+
+.clockmodule{
+    position: fixed;
+    right: 300px;
+    bottom: 50px;
+
+    .canvasclock{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -999;      
+    }
+}

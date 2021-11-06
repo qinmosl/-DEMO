@@ -1,0 +1,57 @@
+a,
+address,
+b,
+big,
+blockquote,
+body,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+ol,
+p,
+pre,
+small,
+span,
+strong,
+u,
+ul,
+var {
+	padding: 0;
+	margin: 0;
+}
+
+
+#root{
+    height: 100%;
+    width: 100%;
+    cursor: default;    
+    /* background-color: rgba(78, 76, 76,0.7); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    /* 随着页面滚动背景图片不会滚动 */
+}
+
