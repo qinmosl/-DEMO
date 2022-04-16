@@ -6,29 +6,19 @@
 
 - 后续有概率会重新完善或者推翻重写？
 
-- [点此去往预览网站](https://www.standpoint.top)
 
-  
+ 
   
   >网站概览
   
-  ![前台界面](https://react-1305405728.cos.ap-nanjing.myqcloud.com/image-20211106152529458.png)
-  
-  
-  
-  > 登录  注册
-  
-  ![登录](https://react-1305405728.cos.ap-nanjing.myqcloud.com/image-20211106152630769.png)
+  ![主页](https://react-1305405728.cos.ap-nanjing.myqcloud.com/browser/1.png)
 
-![注册](https://react-1305405728.cos.ap-nanjing.myqcloud.com/image-20211106152646470.png)
 
 
 
 > 后台界面
 
-
-
-![后台界面](https://react-1305405728.cos.ap-nanjing.myqcloud.com/image-20211106152753748.png)
+![后台界面](https://react-1305405728.cos.ap-nanjing.myqcloud.com/browser/2.png)
 
 
 
